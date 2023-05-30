@@ -17,8 +17,9 @@ otherwise it will sendNACK signal to client.
 
 
 PROGRAM :
-```
+
 CLIENT:
+```
 import socket
 s=socket.socket()
 s.bind(('localhost',8000))
@@ -34,9 +35,10 @@ while True:
  else:
  c.close()
  break
- 
+ ```
  
 SERVER:
+```
 import socket
 s=socket.socket()
 s.connect(('localhost',8000))
